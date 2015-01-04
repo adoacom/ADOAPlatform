@@ -344,7 +344,7 @@ main#content #features header{
 
 #features section.item-post .col-right p{
 	line-height:20px;
-	
+
 }
 div#features-dots{
 	float:left;
@@ -439,7 +439,7 @@ main#content #team header{
 	min-height: 1px;
 	padding-left: 15px;
 	padding-right: 15px;
-	
+
 }
 #team #list-team .icon-round {
     background: url("../images/stripe-3.gif") repeat scroll 0 0 rgba(0, 0, 0, 0);
@@ -449,7 +449,7 @@ main#content #team header{
     text-align: center;
     width: 192px;
 	margin: 0px auto;
-	
+
 }
 #team #list-team .icon-round .bg-wrapper {
     padding: 20px;
@@ -528,6 +528,125 @@ main#content #team header{
 }
 .accordion-group, .nav-pills > li > a {
     border-radius: 0;
+}
+
+/************partners****************/
+
+main#content #partners{
+  height:700px;
+  width: 100%;
+  float:left
+}
+main#content #partners header{
+  width:100%;
+  height:100px;
+  text-align:center;
+
+}
+
+#partners #list-partners{
+  width:100%;
+  float:left;
+  margin-top:10px;
+}
+#partners #list-partners .item-partners{
+  width:293px;
+  height:290px;
+  float:left;
+  text-align: center;
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+
+}
+#partners #list-partners .icon-round {
+  background: url("../images/stripe-3.gif") repeat scroll 0 0 rgba(0, 0, 0, 0);
+  border-radius: 192px;
+  cursor: pointer;
+  height: 192px;
+  text-align: center;
+  width: 192px;
+  margin: 0px auto;
+
+}
+#partners #list-partners .icon-round .bg-wrapper {
+  padding: 20px;
+}
+#partners #list-partners .icon-round .bg{
+  background: none repeat scroll 0 0 #303030;
+  border-radius: 152px;
+  display: table-cell;
+  height: 152px;
+  margin: 0 auto;
+  overflow: hidden;
+  vertical-align: middle;
+  width: 152px;
+}
+#partners #list-partners .icon-round .bg img{
+  width: 152px;
+}
+#partners #list-partners h3.name-partners{
+  color: #484848;
+  font-family: "bebas_neueregular","open_sansregular","arial";
+  font-weight: 500;
+  line-height: 16px;
+  margin: 0 0 8px;
+  text-rendering: optimizelegibility;
+  font-size: 32px;
+  line-height: 32px;
+}
+#partners #list-partners .btn-small {
+  border-radius: 20px;
+  padding: 10px 20px;
+  color: #CCC;
+  font-family: "open_sansregular","arial";
+  font-size: 13px;
+  line-height: 23px;
+}
+
+.nav-pills {
+  margin-bottom: 40px;
+  margin-top:15px;
+}
+.nav-pills > li {
+  float: left;
+}
+.nav-pills > li + li {
+  margin-left: -1px;
+}
+.nav-pills > li {
+  background-color: #fafafa;
+  background-image: linear-gradient(to bottom, #ffffff, #f2f2f2);
+  background-repeat: repeat-x;
+  border: 1px solid #d4d4d4;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.067);
+  min-height: 40px;
+}
+.nav-pills > li > a {
+  border-top: 3px solid #ddd;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: -0.1px;
+  margin: 0;
+  padding: 16px 20px;
+  display: block;
+  padding: 10px 15px;
+  position: relative;
+  color: #f79e35;
+  text-decoration: none;
+}
+.nav-pills > li > a:hover {
+  border-top: 3px solid #f79e35;
+  color: #484848;
+}
+.nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus {
+  background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+  border-top: 3px solid #f79e35;
+  color: #484848;
+}
+.accordion-group, .nav-pills > li > a {
+  border-radius: 0;
 }
 
 /****************CONTACT***********************/
