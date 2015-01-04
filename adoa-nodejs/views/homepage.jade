@@ -1,0 +1,52 @@
+//
+   Created by applepham on 2014-12-28.
+
+extends ./layout.jade
+
+block body
+  body#home.menu-active(data-smooth-scrolling='1')
+    header#top-header
+      .center
+        a#logo(href='#')
+          img(src='/images/logo-header.png', alt='Adoa', title='Adoa', height='70')
+        nav#main-nav(role='navigation')
+          ul
+            li.home
+              a.active(href='#home') Home
+            li
+              a(href='#features') Features
+            li
+              a(href='#works') Works
+            li
+              a(href='#team') Team
+            li
+              a(href='#contact') Contact
+
+    main#content(role='main')
+
+    footer#footer
+      .center
+        .wrapper
+          .container
+            .ad_footer-line
+            .bg
+              .row
+                .col-sm-12.col-md-6
+                  .copyright.pull-left
+                    h5  Copyright ©2014 ADOA. All Rights Reserved
+                .social
+                  .ad_social-share.ad_tight
+                    a.twitter(href='#', title='Twitter')
+                      i.fa.fa-twitter
+                    a.facebook(href='#', title='Facebook')
+                      i.fa.fa-facebook
+                    a.gplus(href='#', title='Gplus')
+                      i.fa.fa-google-plus
+                    a.linkedin(href='#', title='linkedin')
+                      i.fa.fa-linkedin
+                    a.email(href='#', title='email')
+                      i.fa.fa-envelope
+                    a.rss(href='#', title='Rss')
+                      i.fa.fa-rss
+
+block script
