@@ -26,14 +26,13 @@
 <body id="home" data-smooth-scrolling="1" class="menu-active" >
 	<header id="top-header">
     	<div class="center">
-    		<a id="logo" href="#"><img src="images/logo-header.png" alt="Adoa" title="Adoa" height="70" /></a>
+    		<a id="logo" href="#home"><img src="images/logo-header.png" alt="Adoa" title="Adoa" height="70" /></a>
             <nav id="main-nav" role="navigation">
             	<ul>
-                	<li class="home"><a class="active" href="#home"></a></li>
                     <li><a href="#features">Speciality</a></li>
                     <li><a href="#works">Workflow</a></li>
                     <li><a href="#team">Dev-Team</a></li>
-										<li><a href="#partners">Partners</a></li>
+					<li><a href="#partners">Partners</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
@@ -50,7 +49,7 @@
             <header class="codrops-header">
 				<!--<h1>Four Boxes Slideshow <span>Recreating the background image slideshow seen on <a href="http://www.atelier-serge-thoraval.com/en/">Atelier Serge Thoroval's website</a></span></h1>-->
 				<nav class="codrops-demos">
-					<a href="">Developers</a>
+					<a href="login.html">Developers</a>
 					<a href="">Partners</a>
 				</nav>
 			</header>
@@ -431,7 +430,7 @@
 								<div class="icon-round">
 									<div class="bg-wrapper">
 										<div class="bg">
-											<img src="images/partnerss/1.jpg" />
+											<img src="images/partners/1.jpg" />
 										</div>
 									</div>
 								</div>
@@ -444,7 +443,7 @@
 								<div class="icon-round">
 									<div class="bg-wrapper">
 										<div class="bg">
-											<img src="images/partnerss/2.jpg" />
+											<img src="images/partners/2.jpg" />
 										</div>
 									</div>
 								</div>
@@ -457,7 +456,7 @@
 								<div class="icon-round">
 									<div class="bg-wrapper">
 										<div class="bg">
-											<img src="images/partnerss/3.jpg" />
+											<img src="images/partners/3.jpg" />
 										</div>
 									</div>
 								</div>
@@ -470,7 +469,7 @@
 								<div class="icon-round">
 									<div class="bg-wrapper">
 										<div class="bg">
-											<img src="images/partnerss/4.jpg" />
+											<img src="images/partners/4.jpg" />
 										</div>
 									</div>
 								</div>
@@ -483,7 +482,7 @@
 								<div class="icon-round">
 									<div class="bg-wrapper">
 										<div class="bg">
-											<img src="images/partnerss/1.jpg" />
+											<img src="images/partners/1.jpg" />
 										</div>
 									</div>
 								</div>
@@ -496,7 +495,7 @@
 								<div class="icon-round">
 									<div class="bg-wrapper">
 										<div class="bg">
-											<img src="images/partnerss/2.jpg" />
+											<img src="images/partners/2.jpg" />
 										</div>
 									</div>
 								</div>
@@ -509,7 +508,7 @@
 								<div class="icon-round">
 									<div class="bg-wrapper">
 										<div class="bg">
-											<img src="images/partnerss/3.jpg" />
+											<img src="images/partners/3.jpg" />
 										</div>
 									</div>
 								</div>
@@ -522,7 +521,7 @@
 								<div class="icon-round">
 									<div class="bg-wrapper">
 										<div class="bg">
-											<img src="images/partnerss/4.jpg" />
+											<img src="images/partners/4.jpg" />
 										</div>
 									</div>
 								</div>
@@ -667,7 +666,7 @@
 new BoxesFx( document.getElementById( 'boxgallery' ) );
 
 $(function() {
-	$('nav#main-nav a').bind('click',function(event){
+	$('nav#main-nav a , #logo').bind('click',function(event){
 		var $anchor = $(this);
 		var top_height = $($anchor.attr('href')).offset().top;
 		$('nav#main-nav a').removeClass("active");

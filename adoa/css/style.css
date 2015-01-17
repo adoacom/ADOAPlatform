@@ -1,4 +1,4 @@
-*, *:after, *:before { border-box; box-sizing: border-box; }
+/**, *:after, *:before { border-box; box-sizing: border-box; }*/
 .clearfix:before, .clearfix:after { content: ''; display: table; }
 .clearfix:after { clear: both; }
 
@@ -302,6 +302,7 @@ header h1.main-title{
 main#content{
 	float:left;
 	width:100%;
+  min-height: 500px;
 }
 
 main#content #sliders{
@@ -431,7 +432,7 @@ main#content #team header{
 	margin-top:10px;
 }
 #team #list-team .item-team{
-	width:293px;
+	width:263px;
 	height:290px;
 	float:left;
 	text-align: center;
@@ -550,7 +551,7 @@ main#content #partners header{
   margin-top:10px;
 }
 #partners #list-partners .item-partners{
-  width:293px;
+  width:263px;
   height:290px;
   float:left;
   text-align: center;
@@ -651,7 +652,7 @@ main#content #partners header{
 
 /****************CONTACT***********************/
 main#content #contact{
-	height:665px;
+	height:555px;
 	width: 100%;
 	float:left
 }
