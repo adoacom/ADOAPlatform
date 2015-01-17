@@ -1,4 +1,4 @@
-*, *:after, *:before { border-box; box-sizing: border-box; }
+/**, *:after, *:before { border-box; box-sizing: border-box; }*/
 .clearfix:before, .clearfix:after { content: ''; display: table; }
 .clearfix:after { clear: both; }
 
@@ -291,7 +291,7 @@ header h1.main-title{
 #top-header #main-nav ul li a{
 	color:#C60;
 	text-decoration:none;
-	font-size:14px;
+	font-size:18px;
 	font-weight: 200;
 	font-family: 'Raleway', 'Arial', sans-serif;
 }
@@ -302,6 +302,7 @@ header h1.main-title{
 main#content{
 	float:left;
 	width:100%;
+  min-height: 500px;
 }
 
 main#content #sliders{
@@ -344,7 +345,7 @@ main#content #features header{
 
 #features section.item-post .col-right p{
 	line-height:20px;
-	
+
 }
 div#features-dots{
 	float:left;
@@ -411,27 +412,27 @@ main#content #works .ad_banner-title h1 {
     text-shadow: -1px -1px 1px #333;
 }
 
-/************list-isotope****************/
+/************TEAM****************/
 
-main#content .ad_isotope{
+main#content #team{
 	height:700px;
 	width: 100%;
 	float:left
 }
-main#content .ad_isotope header{
+main#content #team header{
 	width:100%;
 	height:100px;
 	text-align:center;
 
 }
 
-.ad_isotope .list-isotope{
+#team #list-team{
 	width:100%;
 	float:left;
 	margin-top:10px;
 }
-.ad_isotope .list-isotope .item-isotope{
-	width:293px;
+#team #list-team .item-team{
+	width:263px;
 	height:290px;
 	float:left;
 	text-align: center;
@@ -439,9 +440,9 @@ main#content .ad_isotope header{
 	min-height: 1px;
 	padding-left: 15px;
 	padding-right: 15px;
-	
+
 }
-.ad_isotope .list-isotope .icon-round {
+#team #list-team .icon-round {
     background: url("../images/stripe-3.gif") repeat scroll 0 0 rgba(0, 0, 0, 0);
 	border-radius: 192px;
     cursor: pointer;
@@ -449,12 +450,12 @@ main#content .ad_isotope header{
     text-align: center;
     width: 192px;
 	margin: 0px auto;
-	
+
 }
-.ad_isotope .list-isotope .icon-round .bg-wrapper {
+#team #list-team .icon-round .bg-wrapper {
     padding: 20px;
 }
-.ad_isotope .list-isotope .icon-round .bg{
+#team #list-team .icon-round .bg{
     background: none repeat scroll 0 0 #303030;
     border-radius: 152px;
     display: table-cell;
@@ -464,10 +465,10 @@ main#content .ad_isotope header{
     vertical-align: middle;
     width: 152px;
 }
-.ad_isotope .list-isotope .icon-round .bg img{
+#team #list-team .icon-round .bg img{
 	width: 152px;
 }
-.ad_isotope .list-isotope h3.name-isotope{
+#team #list-team h3.name-team{
  	color: #484848;
     font-family: "bebas_neueregular","open_sansregular","arial";
     font-weight: 500;
@@ -477,7 +478,7 @@ main#content .ad_isotope header{
 	font-size: 32px;
 	line-height: 32px;
 }
-.ad_isotope .list-isotope .btn-small {
+#team #list-team .btn-small {
     border-radius: 20px;
     padding: 10px 20px;
 	color: #CCC;
@@ -530,9 +531,128 @@ main#content .ad_isotope header{
     border-radius: 0;
 }
 
+/************partners****************/
+
+main#content #partners{
+  height:700px;
+  width: 100%;
+  float:left
+}
+main#content #partners header{
+  width:100%;
+  height:100px;
+  text-align:center;
+
+}
+
+#partners #list-partners{
+  width:100%;
+  float:left;
+  margin-top:10px;
+}
+#partners #list-partners .item-partners{
+  width:263px;
+  height:290px;
+  float:left;
+  text-align: center;
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+
+}
+#partners #list-partners .icon-round {
+  background: url("../images/stripe-3.gif") repeat scroll 0 0 rgba(0, 0, 0, 0);
+  border-radius: 192px;
+  cursor: pointer;
+  height: 192px;
+  text-align: center;
+  width: 192px;
+  margin: 0px auto;
+
+}
+#partners #list-partners .icon-round .bg-wrapper {
+  padding: 20px;
+}
+#partners #list-partners .icon-round .bg{
+  background: none repeat scroll 0 0 #303030;
+  border-radius: 152px;
+  display: table-cell;
+  height: 152px;
+  margin: 0 auto;
+  overflow: hidden;
+  vertical-align: middle;
+  width: 152px;
+}
+#partners #list-partners .icon-round .bg img{
+  width: 152px;
+}
+#partners #list-partners h3.name-partners{
+  color: #484848;
+  font-family: "bebas_neueregular","open_sansregular","arial";
+  font-weight: 500;
+  line-height: 16px;
+  margin: 0 0 8px;
+  text-rendering: optimizelegibility;
+  font-size: 32px;
+  line-height: 32px;
+}
+#partners #list-partners .btn-small {
+  border-radius: 20px;
+  padding: 10px 20px;
+  color: #CCC;
+  font-family: "open_sansregular","arial";
+  font-size: 13px;
+  line-height: 23px;
+}
+
+.nav-pills {
+  margin-bottom: 40px;
+  margin-top:15px;
+}
+.nav-pills > li {
+  float: left;
+}
+.nav-pills > li + li {
+  margin-left: -1px;
+}
+.nav-pills > li {
+  background-color: #fafafa;
+  background-image: linear-gradient(to bottom, #ffffff, #f2f2f2);
+  background-repeat: repeat-x;
+  border: 1px solid #d4d4d4;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.067);
+  min-height: 40px;
+}
+.nav-pills > li > a {
+  border-top: 3px solid #ddd;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: -0.1px;
+  margin: 0;
+  padding: 16px 20px;
+  display: block;
+  padding: 10px 15px;
+  position: relative;
+  color: #f79e35;
+  text-decoration: none;
+}
+.nav-pills > li > a:hover {
+  border-top: 3px solid #f79e35;
+  color: #484848;
+}
+.nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus {
+  background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+  border-top: 3px solid #f79e35;
+  color: #484848;
+}
+.accordion-group, .nav-pills > li > a {
+  border-radius: 0;
+}
+
 /****************CONTACT***********************/
 main#content #contact{
-	height:665px;
+	height:555px;
 	width: 100%;
 	float:left
 }

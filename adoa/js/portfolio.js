@@ -21,8 +21,7 @@ $(window).load(function(){
 		$("#list-team").isotope({ filter: selector });
 		return false;			
 	});	
-	
-	
+
 	$("#list-partners").isotope();	 
 	$('#partners-filter a').click(function(){	
 		$('#partners-filter li').removeClass('active');

@@ -1,0 +1,103 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" class="no-touch ">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>ADOA demo mockup</title>
+<link href="css/fonts.css" type="text/css" rel="stylesheet"/>
+<link href="css/font-awesome.css" type="text/css" rel="stylesheet"/>
+<link href='http://fonts.googleapis.com/css?family=Raleway:200,400,600' rel='stylesheet' type='text/css'>
+<link href="css/reset.css" type="text/css" rel="stylesheet"/>
+<link href="css/style.css" type="text/css" rel="stylesheet"/>
+<link href="css/login-form.css" type="text/css" rel="stylesheet"/>
+<script src="js/jquery-2.1.1.min.js"></script>
+
+</head>
+
+<body id="home">
+	<header id="top-header">
+    	<div class="center">
+    		<a id="logo" href="#"><img src="images/logo-header.png" alt="Adoa" title="Adoa" height="70" /></a>
+            <nav id="main-nav" role="navigation">
+            	<ul>
+                	<li><a href="index.html#features">Speciality</a></li>
+                    <li><a href="index.html#works">Workflow</a></li>
+                    <li><a href="index.html#team">Dev-Team</a></li>
+					<li><a href="index.html#partners">Partners</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main id="content" role="main">
+    	<div class="center">
+          <form method="post" action="index.html" class="login">
+            <p>
+              <label for="login">Email:</label>
+              <input type="text" name="login" id="login" value="name@example.com">
+            </p>
+
+            <p>
+              <label for="password">Password:</label>
+              <input type="password" name="password" id="password" value="4815162342">
+            </p>
+
+            <p class="login-submit">
+              <button type="submit" class="login-button">Login</button>
+            </p>
+
+            <p class="forgot-password"><a href="index.html">Forgot your password?</a></p>
+          </form>
+            
+      </div>
+        
+    </main>
+    
+    <footer id="footer" >
+        <div class="center">
+          <div class="wrapper">
+            <div class="container">
+              <div class="ad_footer-line"> </div>
+              <div class="bg">
+                <div class="row">
+                  <div class=" col-sm-12 col-md-6">
+                    <div class="copyright pull-left">
+                      <h5> Copyright &copy;2014 ADOA. All Rights Reserved  </h5>
+                    </div>
+                  </div>
+                  <div class="social">
+                    <div class="ad_social-share ad_tight"> 
+                      <a href="#" class="twitter" title="Twitter"> <i class="fa fa-twitter"></i> </a> 
+                      <a href="#" class="facebook" title="Facebook"> <i class="fa fa-facebook"></i> </a> 
+                      <a href="#" class="gplus" title="Gplus"> <i class=" fa fa-google-plus"></i> </a> 
+                      <a href="#" class="linkedin" title="linkedin"> <i class="fa fa-linkedin"></i> </a> 
+                      <a href="#" class="email" title="email"> <i class="fa fa-envelope"></i> </a> 
+                      <a href="#" class="rss" title="Rss"> <i class="fa fa-rss"></i> </a> 
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+  </footer>
+  
+  <a id="back-top" class="back-top visible" href="#"><i class="fa fa-chevron-up icon-white"> </i></a>
+  
+</body>
+<script src="js/adoa-functions.js"></script>
+<script>	
+$(function() {
+	
+	/* Back Top.
+	Used: Buttton at the corner right to scroll to the top */
+	$('#back-top').click(function(e){
+		$('nav#main-nav a').removeClass("active");
+		$('nav#main-nav li.home a').addClass("active");
+		e.preventDefault();
+		$('body,html').animate({scrollTop:0},800);
+	}); 
+	
+});
+</script>
+        
+</html>
